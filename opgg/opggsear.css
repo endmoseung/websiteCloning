@@ -1,0 +1,1023 @@
+:root{
+    /*colors*/
+    --new-background:RGB(236, 238, 242);
+    --main-background:#5283e9;
+    --othergames-background:RGB(33, 47, 69);
+    --othergames-hover:#2F436E;
+    --newanddown-color:#ffb902;
+    --design-color:#9aa5ae;
+    --twitter-color:#53acee;
+    --facebook-color:#384f84;
+    --instagram-color:RGB(221, 50, 124);
+    --darkmode-color:#b2ccff;
+    --contentfont-color:#b0caff;
+    --gamemodefont-color:RGB(0, 254, 224);
+    --gray-color:#9aa4af;
+    --desktopdown-background:#202d36;
+    --hover-color:#f7f7f9;
+    --mains-color:#758592;
+    --lasttier-fontcolor:#9AA4AF;
+    --lasttier-background:RGB(236, 238, 242);
+    --background-whitecolor:white;
+
+    /*font-size*/
+    --fontsize-mainlogo:32px;
+    --fontsize-logo:16px;
+    --fontsize-name:12px;
+    --fontsize-contents:15px;
+    --fontsize-ads:14px;
+    --fontsize-ranking:18px;
+    --summoner-sideheadsize:14px;
+    /*border radius*/
+    --summonerlog-borderradius:4px;
+    /*margin*/
+    --summonerlog-margin:8px;
+}
+input:focus{outline:none;}
+
+body{
+    background-color:var(--new-background);
+    margin: 0;
+}
+body.active{
+    background-color: #1c1c1e;
+}
+a{
+    text-decoration: none;
+}
+/*headbox*/
+header .headbox{
+    background-color: var(--main-background);
+}
+header .headbox .headboxmain{
+    display: flex;
+    padding-left: 12px;
+}
+header .headbox .logoandnow{
+    background-color: var(--main-background);
+    display: flex;
+    min-width: 1206.55px;
+}
+header .headbox .logoandnow a{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    margin-right: 20px;
+}
+header .headbox .logoandnow .logos{
+    width: 70px;
+}
+header .headbox .logoandnow .logos img{
+    width: 100%;
+}
+header .headbox .logoandnow .nowgame{
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    color: white;
+}
+header .headbox .logoandnow .nowgame .logo{
+    width: 24px;
+    margin-right: 10px;
+}
+header .headbox .logoandnow .nowgame .logo img{
+    width: 100%;
+}
+header .headbox .logoandnow .nowgame .name{
+    font-size: var(--fontsize-name);
+}
+header .headbox .headboxmain .othergames{
+    display: flex;
+    background-color: var(--othergames-background);
+}
+header .headbox .headboxmain .othergames a:hover{
+    background-color: var(--othergames-hover);
+    border-radius: 4px;
+}
+header .headbox .headboxmain .othergames .gamebox{
+    padding: 5px;
+}
+header .headbox .headboxmain .othergames .game{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0;
+    height: 100%;
+}
+header .headbox .headboxmain .othergames .game .name{
+    font-size: var(--fontsize-name);
+    width: fit-content;
+}
+header .headbox .headboxmain .othergames .game .addinfo{
+    background-color: var(--newanddown-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: var(--othergames-background);
+    margin-right: 8px;
+}
+header .headbox .headboxmain .othergames .logo{
+    width: 25px;
+    margin-right: 10px;
+    height: fit-content;
+}
+header .headbox .headboxmain .othergames .logo img{
+    width: 100%;
+}
+header .headbox .headboxmain .othergames .logo i{
+    font-size: var(--fontsize-logo);
+    color: white;
+}
+header .headbox .headboxmain .loginandoption{
+    display: flex;
+    min-width: 221.445px;
+    justify-content: flex-end;
+    padding-right: 12px;
+    background-color: var(--othergames-background);
+    flex-grow: 1;
+    font-size: 12px;
+    color: white;
+    align-items: center;
+    padding: 12px 0;
+}
+header .headbox .headboxmain .loginandoption .darkmode{
+    cursor: pointer;
+}
+
+header .headbox .headboxmain .loginandoption button{
+    border: none;
+    color: var(--darkmode-color);
+    background-color: var(--othergames-background);
+    height: fit-content;
+    margin-right: 12px;
+}
+header .headbox .headboxmain .loginandoption .language{
+    display: flex;
+    color: white;
+    width: 50px;
+}
+header .headbox .headboxmain .loginandoption .language i{
+    margin-left: 10px;
+}
+header .headbox .headboxmain .loginandoption a{
+    padding: 4px 16px;
+    color: white;
+    background-color: var(--main-background);
+    border-radius: 4px;
+    margin: 0 16px;
+}
+/*contentbox*/
+header .contentsbox{
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-background);
+}
+header .contentsbox .contents{
+    min-width: 1080px;
+    height: 48px;
+    font-size: var(--fontsize-contents);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contentsbox .contents .home{
+    color: white;
+    border-bottom: white solid 3px;
+}
+header .contentsbox .contents a{
+    color: var(--contentfont-color);
+    margin-right: 24px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+header .contentsbox .contents a:hover{
+    color: white;
+    border-bottom: white solid 3px;
+}
+header .contentsbox .contents .gamemode{
+    color: var(--gamemodefont-color);
+}
+
+header .contentsbox .categories{
+    display: flex;
+}
+header .contentsbox .searchbox{
+    display: flex;
+    border-radius: 4px;
+    background-color: white;
+    height: fit-content;
+}
+header .contentsbox .searchbox input{
+    border: none;
+    width: 50px;
+    height: 32px;
+}
+header .contentsbox .searchbox button{
+    padding: 10px 12px;
+}
+header .contentsbox .searchbox .leftbut{
+    font-size: 12px;
+    background-color: #ECF2FF;
+    color: #4171D6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 32px;
+}
+header .contentsbox  .searchbox .rightbut{
+    width: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 32px;
+}
+header .contentsbox  .searchbox .rightbut img{
+    width: 100%;
+    height: 14px;
+}
+/*download,design box*/
+header .downloadbox{
+    background-color: var(--newanddown-color);
+    display: flex;
+    justify-content: center;
+    
+}
+header .downloadbox .download{
+    min-width: 1080px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+}
+header .downloadbox .download a{
+
+    height: 100%;
+}
+header .designbox{
+    background-color: var(--design-color);
+    display: flex;
+    justify-content: center;
+}
+header .designbox .design{
+    min-width: 1080px;
+    height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+header .designbox .design span{
+    text-decoration: underline;
+}
+header .downloadbox:hover{
+    text-decoration: underline;
+}
+header .designbox:hover{
+    text-decoration: underline;
+}
+header .main{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+header .main .logopic{
+    width: 400px;
+}
+header .main .logopic img{
+    width: 100%;
+}
+header .searchboxmom{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+header .searchboxmom .searchbox{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+}
+header .searchboxmom .searchbox .languageandsearch{
+    display: flex;
+}
+header .searchboxmom .searchbox .languageandsearch .language{
+    display: flex;
+    flex-direction: column;
+    width: 194px;
+    border: none;
+    background-color: white;
+    margin: 10px 0 10px 30px;
+    height: 40px;
+    justify-content: space-between;
+    border-right: 0.5px solid var(--gray-color);
+    padding-right: 10px;
+    cursor: pointer;
+}
+header .searchboxmom .searchbox .languageandsearch  .graytxt{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--gray-color);
+    font-size: 14px;
+}
+header .searchboxmom .searchbox .languageandsearch  .blacktxt{
+    font-size: 12px;
+    font-weight: bold;
+}
+header .searchboxmom .searchbox .languageandsearch .search{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    border: none;
+    background-color: white;
+    margin: 10px 0 10px 8px;
+    height: 40px;
+    justify-content: space-between;
+}
+header .searchboxmom .searchbox .languageandsearch .search input{
+    border: none;
+}
+header .searchboxmom .searchbox button{
+    width: 78px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+header .searchboxmom .searchbox .buttonimg{
+    width: 42px;
+}
+header .searchboxmom .searchbox .buttonimg img{
+    width: 100%;
+}
+header .desktopdownmom{
+    display: flex;
+    justify-content: center;
+}
+header .desktopdownmom .desktopdown{
+    background-color: var(--desktopdown-background);
+    color: white;
+    font-size: 12px;
+    padding: 0 16px;
+    margin: 24px 0;
+    border-radius: 4px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+header .desktopdownmom .desktopdown i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+header .summonerinfomom{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 0.5px solid var(--gray-color);
+}
+header .summonerinfomom .summonerinfo{
+    min-width: 1080px;
+}
+header .summonerinfomom .summonerinfo .pictureandlv{
+    position: relative;
+    padding-right: 20px;
+}
+header .summonerinfomom .summonerinfo .pictureandlv .picture{
+    width: 100px;
+    height: 100px;
+}
+header .summonerinfomom .summonerinfo .pictureandlv .picture img{
+    width: 100%;
+    
+    border-radius: 20px;
+}
+header .summonerinfomom .summonerinfo .pictureandlv .lv{
+    position: absolute;
+    bottom: -5px;
+    background-color:#202d37;
+    z-index: 9999;
+    color: white;
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    right: 53px;
+}
+header .summonerinfomom .summonerinfo .infos{
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+}
+header .summonerinfomom .summonerinfo .infos .info{
+    display: flex;
+    flex-direction: column;
+}
+header .summonerinfomom .summonerinfo .infos .info .lasttier{
+    display: flex;
+    font-size: 11px;
+    color: var(--lasttier-fontcolor);
+    align-items: center;
+}
+header .summonerinfomom .summonerinfo .infos .info .lasttier .lastfour{
+    background-color: var(--lasttier-background);
+    margin-right: 5px;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+header .summonerinfomom .summonerinfo .infos .info .lasttier .lastfour span{
+    font-weight: bold;
+}
+header .summonerinfomom .summonerinfo .infos .info .nickname{
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+header .summonerinfomom .summonerinfo .infos .info .nickname .nicknametxt{
+    margin-right: 10px;
+}
+header .summonerinfomom .summonerinfo .infos .info .nickname .favourites{
+    background-color: white;
+    border: 0.5px solid var(--gray-color);
+    border-radius: 4px;
+}
+header .summonerinfomom .summonerinfo .infos .info .percentage{
+    font-size: 12px;
+    color: var(--mains-color);
+    margin-bottom: 10px;
+}
+header .summonerinfomom .summonerinfo .infos .info .percentage span{
+    color: #4171D6;
+}
+header .summonerinfomom .summonerinfo .infos .info .other{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+header .summonerinfomom .summonerinfo .infos .info .other .reset{
+    background-color: #538eE8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 11px 14px;
+    cursor: pointer;
+}
+header .summonerinfomom .summonerinfo .infos .info .other .tiergraph{
+    border: 0.5px solid #538eE8;
+    color: #538eE8;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 11px 14px;
+    cursor: pointer;
+}
+header .summonerinfomom .summonerinfo .infos .info .other .howmanytime{
+    background-color: #7D59EA;
+    color: white;
+    border-radius: 4px;
+    padding: 11px 14px;
+}
+header .summonerinfomom .summonerinfo .infos .info .whenupdate{
+    font-size: 12px;
+    color: #9AA4AF;
+}
+header .otherinfosmom{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+}
+header .otherinfosmom .otherinfos{
+    min-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    padding: 5px 0;
+}
+header .otherinfosmom .otherinfos a{
+    height: 100%;
+}
+header .otherinfosmom .otherinfos .infoleft .total{
+    padding: 8px 30px;
+    background-color: #ECF2FF;
+    color: #4171D6;
+    border-radius: 4px;
+}
+
+header .otherinfosmom .otherinfos .infoleft .champion{
+    padding: 8px 30px;
+    color: black;
+    border-radius: 4px;
+}
+header .otherinfosmom .otherinfos .infoleft .champion:hover{
+    background-color: #F7F7F9;
+}
+header .otherinfosmom .otherinfos .infoleft .ingame{
+    padding: 8px 24px;
+    color: #00A339;
+    border-radius: 4px;
+}
+header .otherinfosmom .otherinfos .infoleft .ingame:hover{
+    background-color: #E5FAF3;
+}
+header .otherinfosmom .otherinfos .inforight{
+    font-size: 12px;
+    color: white;
+    border-radius: 18px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34414D;
+    padding-left: 15px;
+}
+header .otherinfosmom .otherinfos .inforight .icon{
+    background-color: #202D37;
+    border-radius: 50%;
+    padding: 10px;
+}
+/*summonerlog*/
+header .summonerlogmom{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--summonerlog-margin);
+}
+header .summonerlog{
+    min-width: 1080px;
+    display: flex;
+}
+/*logside*/
+header .summonerlog .logside{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+}
+/*side1*/
+header .summonerlog .logside .side1{
+    border-radius: var(--summonerlog-borderradius);
+    background-color: var(--background-whitecolor);
+    margin: 0 var(--summonerlog-margin) var(--summonerlog-margin) 0;
+}
+header .summonerlog .logside .side1 .side1txt{
+    font-size:var(--summoner-sideheadsize);
+    border-bottom: 1px solid #EBEEF1;
+    padding: 8px 12px;
+}
+header .summonerlog .logside .side1 .side1main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 12px;
+}
+header .summonerlog .logside .side1 .side1main .tierabout{
+    display: flex;
+    align-items: center;
+}
+header .summonerlog .logside .side1 .side1main .tierabout .tierimg img{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #F7F7F9;
+    margin-right: 12px;
+}
+header .summonerlog .logside .side1 .side1main .tierabout .tiertxt{
+    line-height: 150%;
+}
+header .summonerlog .logside .side1 .side1main .tierabout .tiertxt .bigtxt{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+header .summonerlog .logside .side1 .side1main .tierabout .tiertxt .smalltxt{
+    font-size: 12px;
+    color: #758592;
+}
+header .summonerlog .logside .side1 .side1main .winrate{
+    font-size: 12px;
+    color: #9AA4Af;
+    line-height: 150%;
+}
+/*side2*/
+
+header .summonerlog .logside .side2{
+    border-radius: var(--summonerlog-borderradius);
+    background-color: var(--background-whitecolor);
+    margin: 0 var(--summonerlog-margin) var(--summonerlog-margin) 0;
+}
+header .summonerlog .logside .side2 .side2txt{
+    font-size:var(--summoner-sideheadsize);
+    border-bottom: 1px solid #EBEEF1;
+    padding: 8px 12px;
+}
+header .summonerlog .logside .side2 .side2main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+}
+header .summonerlog .logside .side2 .side2main .tierabout{
+    display: flex;
+    align-items: center;
+}
+header .summonerlog .logside .side2 .side2main .tierabout .tierimg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F7F7F9;
+    margin-right: 12px;
+}
+header .summonerlog .logside .side2 .side2main .tierabout .tiertxt{
+    line-height: 150%;
+}
+header .summonerlog .logside .side2 .side2main .tierabout .tiertxt .bigtxt{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+header .summonerlog .logside .side2 .side2main .tierabout .tiertxt .smalltxt{
+    font-size: 12px;
+    color: #758592;
+}
+header .summonerlog .logside .side2 .side2main .winrate{
+    font-size: 12px;
+    color: #9AA4Af;
+    line-height: 150%;
+}
+
+/*side3*/
+
+header .summonerlog .logside .side3{
+    border-radius: var(--summonerlog-borderradius);
+    background-color: var(--background-whitecolor);
+    margin: 0 var(--summonerlog-margin) var(--summonerlog-margin) 0;
+    display: flex;
+    flex-direction: column;
+}
+header .summonerlog .logside .side3 .season{
+    display: flex;
+    padding: 4px;
+    justify-content: space-around;
+    border-bottom: 1px solid #EBEEF1;
+}
+header .summonerlog .logside .side3 .season .allseason{
+    background-color: #edf2ff;
+    color: #4171D6;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: var(--summonerlog-borderradius);
+    padding: 4px 0;
+    width: 32%;
+    text-align: center;
+}
+header .summonerlog .logside .side3 .season .rank{
+    color: black;
+    font-size: 14px;
+    border-radius: var(--summonerlog-borderradius);
+    padding: 4px 0;
+    width: 32%;
+    text-align: center;
+}
+header .summonerlog .logside .side3 .season .rank:hover{
+    background-color: rgb(236, 236, 236);
+}
+header .summonerlog .logside .side3 .season .whatchampion{
+    display: flex;
+    flex-direction: column;
+}
+header .summonerlog .logside .side3  .whatchampion .champion{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #EBEEF1;
+    align-items: center;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .champinfo{
+    display: flex;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .champinfo .champimg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .champinfo .champimg img{
+    width: 100%;
+    border-radius: 50%;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .champinfo .champname{
+    display: flex;
+    flex-direction: column;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .champinfo .champname .uptxt{
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    line-height: 20px;
+}
+header .summonerlog .logside .side3  .whatchampion .champion  .downtxt{
+    font-size: 11px;
+    color: #9AA4AF;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .grade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .grade .uptxt{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #758592;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .grade .green{
+    color: #00BBA3;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .winrate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .summonerlog .logside .side3  .whatchampion .champion .winrate .uptxt{
+    font-size: 12px;
+    color: #879292;
+    line-height: 20px;
+}
+header .summonerlog .logside .side3  .whatchampion .morelook{
+    background-color: #F7F7F9;
+    text-align: center; 
+    font-size: 12px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+/*side4*/
+header .summonerlog .logside .side4{
+    border-radius: var(--summonerlog-borderradius);
+    background-color: var(--background-whitecolor);
+    margin: 0 var(--summonerlog-margin) var(--summonerlog-margin) 0;
+    display: flex;
+    flex-direction: column;
+}
+header .summonerlog .logside .side4 .title{
+    font-size: 14px;
+    border-bottom: 1px solid #EBEEF1;
+    padding: 8px 12px;
+}
+header .summonerlog .logside .side4 .head{
+    background-color: #F7F7F9;
+    border-bottom: 1px solid #EBEEF1;
+    font-size: 12px;
+    color: #9AA4AF;
+    display: flex;
+    padding: 8px 12px;
+}
+header .summonerlog .logside .side4 .head .headtxtleft{
+    width:40%;
+}
+header .summonerlog .logside .side4 .head .headtxtright{
+    width:55%;
+    text-align: center;
+}
+header .summonerlog .logside .side4 .champ{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEEF1;
+    padding: 8px 12px;
+    align-items: center;
+}
+header .summonerlog .logside .side4 .champ .aboutchamp{
+    display: flex;
+    align-items: center;
+}
+header .summonerlog .logside .side4 .champ .aboutchamp .champimg{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+header .summonerlog .logside .side4 .champ .aboutchamp .champimg img{
+    width: 100%;
+    border-radius: 50%;
+}
+header .summonerlog .logside .side4 .champ .aboutchamp .champtxt{
+    font-size: 12px;
+    color: black;
+}
+header .summonerlog .logside .side4 .champ .aboutplay{
+    display: flex;
+    align-items: center;
+}
+header .summonerlog .logside .side4 .champ .aboutplay .chart{
+    font-size: 11px;
+    color: white;
+    background-color: #E84057;
+    border-radius: var(--summonerlog-borderradius);
+    width: 120px;
+    text-align: end;
+    padding: 4px;
+}
+header .summonerlog .logside .side4 .champ .aboutplay .winrate{
+    font-size: 12px;
+    color: #758592;
+    padding-left: 12px;
+}
+/*side5*/
+
+header .summonerlog .logside .side5{
+    border-radius: var(--summonerlog-borderradius);
+    background-color: var(--background-whitecolor);
+    margin: 0 var(--summonerlog-margin) var(--summonerlog-margin) 0;
+    display: grid;
+    grid-row: auto;
+}
+header .summonerlog .logside .side5 .sameteam{
+    font-size: 14px;
+    border-bottom: 1px solid #EBEEF1;
+    padding: 8px 12px;
+}
+header .summonerlog .logside .side5 .head{
+    background-color: #F7F7F9;
+    border-bottom: 1px solid #EBEEF1;
+    font-size: 12px;
+    color: #9AA4AF;
+    display: grid;
+    padding: 8px 12px;
+    grid-template-columns: 50% 15% 15% 20%;
+}
+header .summonerlog .logside .side5 .head .txt1{
+    
+}
+header .summonerlog .logside .side5 .head .txt2{
+    text-align: center;
+}
+header .summonerlog .logside .side5 .head .txt3{
+    text-align: center;
+}
+header .summonerlog .logside .side5 .head .txt4{
+    text-align: end;
+}
+header .summonerlog .logside .side5 .mates{
+    display: flex;
+    flex-direction: column;
+}
+header .summonerlog .logside .side5 .mates .mate{
+    border-bottom: 1px solid #EBEEF1;
+    padding: 8px 12px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 15% 15% 20%;
+}
+header .summonerlog .logside .side5 .mates .mate .summoner{
+    display: flex;
+    align-items: center;
+}
+header .summonerlog .logside .side5 .mates .mate .summoner .summonerpic{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+header .summonerlog .logside .side5 .mates .mate .summoner .summonerpic img{
+    width: 100%;
+    border-radius: 50%;
+}
+header .summonerlog .logside .side5 .mates .mate .summoner .summonername{
+    font-size: 12px;
+}
+header .summonerlog .logside .side5 .mates .mate .howmany{
+    font-size: 12px;
+    color: #758592;
+    text-align: center;
+}
+header .summonerlog .logside .side5 .mates .mate .winrose{
+    font-size: 12px;
+    color: #758592;
+    text-align: center;
+}
+header .summonerlog .logside .side5 .mates .mate .winrate{
+    font-size: 12px;
+    color: #758592;
+    text-align: end;
+}
+header .summonerlog .logmain{
+    flex-basis: 65%;
+}
+header .summonerlog .logmain  .summoneranalysis .head{
+    display: flex;
+    justify-content: space-between;
+}
+header .summonerlog .logmain  .summoneranalysis .head .headmain{
+    display: flex;
+    
+}
+header .summonerlog .logmain  .summoneranalysis .head .headmain .cuetype{
+    display: flex;
+}
+
+
+
+.donut{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: conic-gradient(
+        red 0deg 55%,
+        blue 55% 100%
+    );
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.donut .circle{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*othercontent*/
+header .othercontentmom{
+    display: flex;
+    justify-content: center;
+}
+header .othercontentmom .othercontent{
+    min-width: 1080px;
+    margin-top: 100px;
+    display: flex;
+    border-bottom: 1px solid var(--mains-color);
+    padding-bottom: 20px;
+}
+header .othercontentmom .othercontent .logo{
+    width: 99px;
+}
+header .othercontentmom .othercontent .logo img{
+    width: 100%;
+}
+header .othercontentmom .othercontent .othercontents{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    font-size: 14px;
+    color: black;
+}
+header .othercontentmom .othercontent .othercontents .title{
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+header .othercontentmom .othercontent .othercontents .mains{
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+}
+header .othercontentmom .othercontent .othercontents .mains .maintxtstrong{
+    font-weight: bold;
+}
+header .othercontentmom .othercontent .othercontents .mains a{
+    font-size: 14px;
+    color: var(--mains-color);
+}
+header .othercontentmom .othercontent .othercontents .mains a:hover{
+    text-decoration: underline;
+}
+/*footer*/
+header .footerboxmom{
+    display: flex;
+    justify-content: center;
+}
+header .footerboxmom .footerbox{
+    min-width: 1080px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+header .footerboxmom .footerbox .footertxt{
+    font-size: 12px;
+    color: var(--mains-color);
+    width: 980px;
+}
+header .footerboxmom .footerbox .sns{
+    display: flex;
+    font-size: 24px;
+}
+header .footerboxmom .footerbox .sns a{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+header .footerboxmom .footerbox .sns a img{
+    width: 100%;
+}

@@ -1,0 +1,1241 @@
+:root{
+    /*colors*/
+    --inflearn-logo:RGB(23, 193, 120);
+    --sign-logo:#ff7867;
+    --search-background:#f6f6f6;
+    --ad-background:#5acf94;
+    --pricetxt2-color:RGB(187, 187, 187);
+    --inputsearchh-background:RGB(233, 248, 239);
+    --stars-color:RGB(251, 204, 8);
+    --pricetxt3-color:RGB(21, 93, 190);
+    --pricetxt4green-color:RGB(227, 250, 251);
+    --pricetxt4red-color:RGB(246, 212, 234);
+    --newmainbox-color:RGB(249, 249, 249);
+    --business-backgroundcolor:RGB(222, 225, 224);
+    --dicount-background:RGB(255, 98, 24);
+    --service-backgroundcolor:#f9f9f9;
+    --font-darkgray:#7f7f7f;
+    --footer-backgroundcolor:RGB(47, 55, 63);
+    --footer-color:RGB(151, 153, 155);
+    --topsearch-color:RGB(246, 246, 246);
+    /*fontsize*/
+    --fontsize-30:30px;
+    --fontsize-20:20px;
+    --fontsize-18:18px;
+    --fontsize-16:16px;
+    --fontsize-15:15px;
+    --fontsize-14:14px;
+    --fontsize-12:12px;
+    
+    
+}
+body{
+    margin: 0;
+
+}
+::-webkit-scrollbar {
+    display: none; 
+}
+
+
+header .headboxmom{
+    font-size: 14px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 9999;
+}
+header .headbox{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+a{
+    text-decoration: none;
+}
+header .maincontents{
+    display: flex;
+    flex-direction: column;
+}
+header .headbox .searchmain{
+    background-color: white;
+    border: none;
+}
+header .headbox .searchmain img{
+    width: 20px;
+    height: 20px;
+}
+header .headbox .logo{
+    display: flex;
+    align-items: center;
+}
+header .headbox .logo img{
+    width: 120px;
+    height: 20px;
+}
+header .headbox .loginandsign{
+    display: flex;
+    align-items: center;
+}
+header .headbox .loginandsign .login{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 45px;
+}
+header .headbox .loginandsign .sign{
+    background-color: var(--sign-logo);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+header .headboxmom .headbox{
+    display: flex;
+    justify-content: space-between;
+}
+header .headboxmom .headbox .logoandcontent{
+    display: flex;
+    align-items: center;
+}
+header .headboxmom .headbox  .content{
+    display: none;
+}
+header .headboxmom .headbox .loginandsign .topinput{
+   display: none;
+}
+header .headboxmom .headbox .loginandsign .knowledge{
+    display: none;
+}
+header .maincontents .adbox{
+    
+    justify-content: center;
+}
+header .maincontents .adbox .ad{
+    height: 300px;
+    
+}
+header .maincontents .adbox .ad .img{ 
+    height: 100%;
+}
+header .maincontents .adbox .ad .img img{
+    width: 100%;
+    height: 100%;
+}
+header .maincontents .searchbox{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+header .maincontents .search{
+    background-color: white;
+    padding: 0px 16px;
+}
+header .maincontents .search .searchtxt{
+    font-size: var(--fontsize-20);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+header .maincontents .search .inputsearch{
+    background-color: var(--inputsearchh-background);
+    border-radius:40px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between  ;
+    padding: 10px 20px;
+    border: 0.5px solid var(--inflearn-logo);
+}
+header .maincontents .search .inputsearch input{
+    width: 100%;
+    background-color: var(--inputsearchh-background);
+    border: none;
+    font-size: var(--fontsize-16)
+}
+header .maincontents .search .inputsearch .searchbut{
+    border: none;
+    background-color: var(--inputsearchh-background);
+    cursor: pointer;
+    
+}
+header .maincontents .search .inputsearch .searchbut i{
+    font-size: 16px;
+}
+header .maincontents .mainthing{
+    margin: 0 16px;
+}
+/*mainbegin1*/
+header .maincontents .mainthing .mainbegin1{
+    margin-bottom: 40px;
+
+}
+header .maincontents .mainthing .mainbegin1 .txtbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+header .maincontents .mainthing .mainbegin1 .txtbox .linktxt{
+    display: flex;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+header .maincontents .mainthing .mainbegin1 .txtbox .linktxt .bigtxt{
+    font-weight: bold;
+    color: black    ;
+    font-size: var(--fontsize-18);
+}
+header .maincontents .mainthing .mainbegin1 .txtbox .linktxt .redtxt{
+    font-size: var(--fontsize-12);
+    color: red;
+    padding: 0 10px;
+}
+
+header .maincontents .mainthing .mainbegin1 .txtbox .txtinfo{
+    font-size: var(--fontsize-16);
+    color: var(--pricetxt2-color);
+    padding: 16px 0;
+}
+
+header .maincontents .mainthing .mainbegin1 .picturepricebox{
+    display: flex;
+    overflow-x: scroll;
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox a{
+    min-width: 47%;
+    margin-right: 6px;
+}
+
+header .maincontents .mainthing .mainbegin1 .picturepricebox a .picture img{
+    width: 100%;
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandprice{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandprice .price{
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandprice .price .pricetxt1{
+    font-size: var(--fontsize-15);
+    color: black;
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandprice .price .pricetxt2{
+    font-size: var(--fontsize-15);
+    color: var(--pricetxt2-color);
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandprice .price .star{
+    color: var(--stars-color);
+    font-size: var(--fontsize-14);
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandprice .price .star .howmany{
+    color: black;
+    font-size: var(--fontsize-12);
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandprice .price .pricetxt3{
+    color: var(--pricetxt3-color);
+    font-size: var(--fontsize-15);
+    font-weight: bold;
+}
+header .maincontents .mainthing .picturepricebox .pictureandprice .price .pricetxt4green{
+    background-color: var(--pricetxt4green-color);
+    font-size: var(--fontsize-12);
+    color: black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+header .maincontents .mainthing .picturepricebox .pictureandprice .price .pricetxt4red{
+    background-color: var(--pricetxt4red-color);
+    font-size: var(--fontsize-12);
+    color: black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+/*mainbegin2 */
+header .maincontents .mainthing .mainbegin2{
+    margin-bottom: 40px;
+
+}
+header .maincontents .mainthing .mainbegin2 .txtbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+header .maincontents .mainthing .mainbegin2 .txtbox .linktxt{
+    display: flex;
+    align-items: center;
+}
+header .maincontents .mainthing .mainbegin2 .txtbox .linktxt .bigtxt{
+    font-weight: bold;
+    color: black    ;
+    font-size: var(--fontsize-18);
+}
+header .maincontents .mainthing .mainbegin2 .txtbox .linktxt .redtxt{
+    font-size: var(--fontsize-12);
+    color: red;
+    padding: 0 10px;
+}
+
+header .maincontents .mainthing .mainbegin2 .txtbox .txtinfo{
+    font-size: var(--fontsize-16);
+    color: var(--pricetxt2-color);
+    padding: 16px 0;
+}
+
+header .maincontents .mainthing .mainbegin2 .picturepricebox{
+    display: flex;
+    overflow-x: scroll;
+}
+
+header .maincontents .mainthing .mainbegin2 .picturepricebox a{
+    min-width: 47%;
+    margin-right: 6px;
+}
+
+
+header .maincontents .mainthing .mainbegin2 .picturepricebox a .picture img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+header .maincontents .mainthing .mainbegin2 .picturepricebox .pictureandprice{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header .maincontents .mainthing .mainbegin2 .picturepricebox .pictureandprice .price{
+    padding: 0 25px;
+    color: black;
+}
+/*mainbegin3*/
+header .maincontents .mainthing .mainbegin3{
+    margin-bottom: 40px;
+
+}
+header .maincontents .mainthing .mainbegin3 .txtbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+header .maincontents .mainthing .mainbegin3 .txtbox .linktxt{
+    display: flex;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+header .maincontents .mainthing .mainbegin3 .txtbox .linktxt .bigtxt{
+    font-weight: bold;
+    color: black    ;
+    font-size: var(--fontsize-18);
+}
+header .maincontents .mainthing .mainbegin3 .picturepricebox{
+    display: flex;
+    overflow-x: scroll;
+}
+
+header .maincontents .mainthing .mainbegin3 .picturepricebox a{
+    min-width: 300px;
+    margin-right: 6px;
+}
+
+
+header .maincontents .mainthing .mainbegin3 .picturepricebox a .picture img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+header .maincontents .mainthing .mainbegin3 .picturepricebox .pictureandprice{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 150%;
+}
+header .maincontents .mainthing .mainbegin3 .picturepricebox .pictureandprice .price .pricetxt5{
+    font-weight: bold;
+    color: black;
+    font-size: var(--fontsize-15);
+}
+header .maincontents .mainthing .mainbegin3 .picturepricebox .pictureandprice .price .pricetxt6{
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: black;
+    
+
+    font-size: var(--fontsize-15);
+}
+/*mainbegin4*/
+header .maincontents .mainthing .mainbegin4{
+    margin-bottom: 40px;
+}
+
+header .maincontents .mainthing .mainbegin4 .txtbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+header .maincontents .mainthing .mainbegin4 .txtbox .linktxt{
+    display: flex;
+    align-items: center;
+}
+header .maincontents .mainthing .mainbegin4 .txtbox .linktxt .bigtxt{
+    font-weight: bold;
+    color: black    ;
+    font-size: var(--fontsize-18);
+}
+header .maincontents .mainthing .mainbegin4 .txtbox .linktxt .redtxt{
+    font-size: var(--fontsize-12);
+    color: red;
+    padding: 0 10px;
+}
+
+header .maincontents .mainthing .mainbegin4 .txtbox .txtinfo{
+    font-size: var(--fontsize-16);
+    color: var(--pricetxt2-color);
+    padding: 16px 0;
+}
+
+header .maincontents .mainthing .mainbegin4 .picturepricebox{
+    display: flex;
+    overflow-x: scroll;
+}
+
+header .maincontents .mainthing .mainbegin4 .picturepricebox a{
+    min-width: 47%;
+    margin-right: 6px;
+}
+
+header .maincontents .mainthing .mainbegin4 .picturepricebox a .picture img{
+    width: 100%;
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+}
+
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .picture .discount{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .picture .discount .discounttxt{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 1px solid white;
+    padding: 4px 2px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: var(--fontsize-12);
+    background-color: var(--dicount-background);    
+    color: white;
+    position: absolute;
+    top: 5px;
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price{
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .pricetxt1{
+    font-size: var(--fontsize-15);
+    color: black;
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .pricetxt2{
+    font-size: var(--fontsize-15);
+    color: var(--pricetxt2-color);
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .star{
+    color: var(--stars-color);
+    font-size: var(--fontsize-14);
+}
+
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .pricetxtbox{
+    display: flex;
+    font-size: var(--fontsize-15);
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .pricetxtbox .discountedprice{
+    color: var(--pricetxt2-color);
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .star .howmany{
+    color: black;
+    font-size: var(--fontsize-12);
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .pricetxt3{
+    color: var(--pricetxt3-color);
+    font-size: var(--fontsize-16);
+    font-weight: bold;
+}
+
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .pricetxt4box{
+    display: flex;
+}
+
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandprice .price .pricetxt4box .pricetxt4green{
+    margin-right: 10px;
+}
+header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandpricehover{
+    display: none;
+}
+header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandpricehover{
+    display: none;
+}
+/*후기, 얼마나 많은 사람이 후원했는지*/
+header .newandhowmany{
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+}
+header .newandhowmany .howmanymain{
+    display: flex;
+    flex-direction: column;
+}
+header .newandhowmany .howmanymain .howmanycon{
+    font-weight: bold;
+    font-size: 25px;
+    color:black;
+    margin-bottom: 10px;
+}
+
+header .newandhowmany .howmanymain .howmanycon .howmanycongreen{
+    color: var(--inflearn-logo);
+}
+header .newandhowmany .howmanymain .howmanytxt{
+    color: var(--pricetxt2-color);
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+header .newandhowmany .howmanymain .howmanybut{
+    display: flex;
+}
+header .newandhowmany .howmanymain .howmanybut a:hover{
+    background-color: var(--ad-background);
+}
+header .newandhowmany .howmanymain .howmanybut a{
+    color: black;
+    padding: 5px 20px;
+    font-size: var(--fontsize-16);
+    border: 1px solid var(--inflearn-logo);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+header .newandhowmany .newmain{
+    margin: 24px 24px;
+    display: flex;
+    flex-direction: column;
+}
+header .newandhowmany .newmain .newmainbox{
+    padding: 16px;
+    border: 0.5px solid var(--pricetxt2-color);
+    border-radius: 6px;
+    background-color: var(--newmainbox-color);
+    margin-bottom: 16px;
+}
+header .newandhowmany .newmain .newmainbox .newmainreview{
+    display: flex;
+    color: var(--pricetxt2-color);
+    margin-bottom: 16px;
+}
+header .newandhowmany .newmain .newmainbox .imoandcon{
+    display: flex;
+    color: black;
+    margin-bottom: 8px;
+}
+header .newandhowmany .newmain .newmainbox .imoandcon:hover{
+    text-decoration: underline;
+}
+header .newandhowmany .newmain .newmainbox .imoandcon a{
+    color: black;
+    font-weight: bold;
+}
+header .newandhowmany .newmain .newmainbox .imoandcon .newmaincon{
+    margin-right: 16px;
+}
+header .newandhowmany .newmain .newmainbox .newmaintxt{
+    font-size: var(--fontsize-14);
+}
+/*business */
+header .businessboxmom{
+    background-color: var(--business-backgroundcolor);
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+header .businessbox .businesstxt{
+    margin-bottom: 16px;
+}
+header .businessbox .business .businesslink{
+    background-color: white;
+    padding: 8px 16px;
+    color: var(--inflearn-logo);
+    border-radius: 8px;
+    font-weight: bold;
+}
+/*enterprise */
+
+header .entbox{
+    padding: 16px;
+}
+
+header .entbox .enttxtbox{
+    display: flex;
+    justify-content: center;
+}
+header .entbox .ent .enttxt{
+    font-weight: bold;
+    font-size: var(--fontsize-15);
+    text-align: center;
+    width: 170px;
+}
+header .entbox .ent .entlogo{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px;
+    
+}
+header .entbox .ent .entlogo .logos{
+    height: 20px;   
+}
+header .entbox .ent .entlogo img{
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+/*서비스 신청*/
+header .servicemom{
+    background-color: var(--business-backgroundcolor);
+    padding: 32px 16px;
+}
+header .service .servicebox .servicetxt{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+header .service .servicebox .servicetxt .servicetxtbig{
+    font-size: 22px;
+    font-weight: bold;
+}
+header .service .servicebox .servicetxt .servicetxtsmall{
+    font-size: var(--fontsize-16);
+    color: var(--font-darkgray);
+    margin-top: 12px;
+}
+header .service .servicebox .serviceattend{
+    display: flex;
+    overflow-x: scroll;
+}
+header .service .servicebox .serviceattend .serviceattendbox{
+    padding: 40px 20px;
+    height: 250px;
+    background-color: white;
+    margin-right: 8px;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+header .service .servicebox .serviceattend .serviceattendbox .serviceboxtxt{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+
+}
+header .service .servicebox .serviceattend .serviceattendbox .serviceboxtxt .bigservicetxt{ 
+    font-weight: bold;
+    font-size: var(--fontsize-20);
+    margin-bottom: 10px;
+}
+header .service .servicebox .serviceattend .serviceattendbox .serviceboxtxt .smallservicetxt{
+    color: var(--font-darkgray);
+    line-height: 140%;
+}
+header .service .servicebox .serviceattend .serviceattendbox .serviceboxbut{
+    background-color: var(--inflearn-logo);
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+/*footer시작*/
+
+header footer .addinfo .addinfos .addinfobox4,.addinfobox5{
+    display: none;
+}
+header footer{
+    background-color: var(--footer-backgroundcolor);
+}
+header footer .addinfo .addinfos{
+    padding: 0 16px;
+    padding-bottom: 30px;
+}
+header footer .addinfo .addinfos .addinfobox{
+    border-bottom: 0.5px solid var(--font-darkgray);
+    padding-bottom: 8px;
+    padding-top: 16px;
+}
+header footer .addinfo .addinfos .addinfobox .infoboxcon{
+    width: 100%;
+    background-color: var(--footer-backgroundcolor);
+    font-size: var(--fontsize-15);
+    padding: 12px 0;
+    border: none;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+header footer .addinfo .addinfos .addinfobox .infoboxcon .infoboxcon1{
+    font-weight: bold;
+}
+header footer .addinfo .addinfos .addinfobox .addinfomain{
+    display: flex;
+    flex-direction: column;
+    line-height: 180%;
+    font-size: var(--fontsize-14);
+    display: none;
+}
+
+header footer .addinfo .addinfos .addinfobox .addinfomain.active{
+    display: flex;
+}
+header footer .addinfo .addinfos .addinfobox .addinfomain a{
+    color: var(--footer-color);
+}
+
+header footer .termsandinfo .etcinfo .etcinfotxt{
+    display: none;
+}
+header footer .termsandinfo .etcinfo .etcinfotxt.active{
+    display: flex;
+    justify-content: center;
+}
+header footer .termsandinfo .etcinfo .etcinfotxtmain{
+    display: none;
+}
+header footer .termsandinfo .etcinfo .etcinfotxtmain.active{
+    display: block;
+}
+header footer .termsandinfo{
+    color: var(--footer-color);
+    text-align: center;
+    padding: 30px 0;
+    font-size: var(--fontsize-12);
+}
+header footer .termsandinfo .etcinfo .linked{
+    color:var(--footer-color);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+header footer .termsandinfo .etcinfo a:hover{
+    color: rgb(31, 31, 31);
+}
+header footer .termsandinfo .etcinfo .etcinfobut{
+    background-color: var(--footer-backgroundcolor);
+    color: var(--footer-color);
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+}
+header footer .termsandinfo .terms a{
+    color: var(--footer-color);
+    font-weight: bold;
+    font-size: var(--fontsize-14);
+}
+header footer .termsandinfo .rights{
+    padding: 10px;
+}
+header footer .terminfosns .termsandinfo,.etcsns{
+    padding: 0 16px;
+}
+/*mobilebutton*/
+.mobilebut{
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 16px;
+    font-size: var(--fontsize-14);
+    z-index: 20;
+}
+.mobilebut a {
+    color: black;
+}
+
+.mobilebut a .dashboard{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobilebut a .dashboard .dashboardicon {
+    font-size: 23px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobilebut a .dashboard .dashboardtxt{
+    text-align: center;
+}
+
+.mobilebut a .dashboard .lectureicon {
+    font-size: 23px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobilebut a .dashboard .lecturetxt{
+    text-align: center;
+}
+.mobilebut a .dashboard .homeicon {
+    font-size: 23px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--inflearn-logo);
+}
+.mobilebut a .dashboard .hometxt{
+    text-align: center;
+    color: var(--inflearn-logo);
+}
+.mobilebut a .dashboard .roadmapicon {
+    font-size: 23px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobilebut a .dashboard .roadmaptxt{
+    text-align: center;
+}
+.mobilebut a .dashboard .moreicon {
+    font-size: 23px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobilebut a .dashboard .moretxt{
+    text-align: center;
+}
+header .enquiry{
+    display: none;
+}
+header footer .terminfosns .termsandinfo .terms .termslogo{
+    display: none;
+}
+.etcsns{
+    display: none;
+}
+/*PC 화면*/
+@media screen and (min-width:900px){
+    header .enquiry{
+        font-weight: bold;
+        display: flex;
+        color: black;
+        background-color: RGB(255, 255, 255);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        border-radius: 30px;
+        border: 2px solid rgb(235, 235, 235);
+        align-items: center;
+        position: fixed;
+        bottom: 20px;
+        right: 0;
+    }
+    header .bigtxt{
+        font-size: 20px;
+    }
+    header .enquiry .enquirytxt{
+        padding: 15px;
+    }
+    header .enquiry .enquiryimg img{
+        width: 50px;
+        border-radius: 50%;
+    }
+    header .headboxmom .headbox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .headboxmom .headbox  a{
+        color: black;
+    }
+    header .headboxmom .headbox .logoandcontent{
+        display: flex;
+        width: 460px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .headboxmom .headbox .contentbox{
+        display: flex;
+    }
+    header .headboxmom .headbox  .content{
+        display: block;
+    }
+    header .headbox .searchmain{
+        display: none;
+    }
+    header .headboxmom .headbox .loginandsign .topinput{
+        position: relative;
+        border-radius: 4px;
+        display: flex;
+    }
+    header .headboxmom .headbox .loginandsign .topinput input{
+        border: none;
+        background-color: var(--topsearch-color);
+        height: 30px;
+        border-radius: 4px;
+    }
+    header .headboxmom .headbox .loginandsign .topinput button{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border: none;
+        background-color: var(--topsearch-color);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    header .headboxmom .headbox .loginandsign .topinput:hover{
+        border: 0.5px solid black;
+    }
+
+    header .headboxmom .headbox .loginandsign .knowledge{
+        color: rgb(23, 23, 23);
+        margin-left: 30px;
+        display: flex;
+    }
+    header .headboxmom .headbox .loginandsign .knowledge:hover{
+        color: var(--inflearn-logo);
+    }
+    header .headboxmom .headbox .loginandsign .login{
+        border: 0.5px solid var(--font-darkgray);
+        border-radius: 4px;
+        margin-left: 10px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-right: 10px;
+    }
+    header .headboxmom{
+        display: flex;
+        font-size: 16px;
+    }
+    header .headboxmom .headbox{
+    width: 1200px;
+    margin: 0 auto;
+    }
+    header .maincontents .searchbox .search{
+        max-width: 600px;
+        margin: 0 auto;
+        
+    }
+    header .maincontents .mainthingbox{
+        padding: 0 16px;
+    }
+    header .maincontents .mainthing{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header .maincontents .mainthing .mainbegin1 .picturepricebox a{
+        min-width: 235px;
+        margin-right: 6px;
+        display: flex;
+    }
+
+    header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandpricehover{
+        height: 310px;
+        background-color: black;
+        position: absolute;
+        width: 235px;
+        opacity: 0.8;
+        display: none;
+
+    }
+    header .maincontents .mainthing .mainbegin1 .picturepricebox a:hover .pictureandpricehover{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandpricehover .txt1{
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+    }
+    header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandpricehover .txt2{
+        padding: 10px;
+        font-size: var(--fontsize-14);
+        color: #a2a4d2;
+        line-height: 150%;
+    }
+    header .maincontents .mainthing .mainbegin1 .picturepricebox .pictureandpricehover .imoticons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: white;
+        font-size: var(--fontsize-18);
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandpricehover{
+        height: 300px;
+        background-color: black;
+        position: absolute;
+        width: 235px;
+        opacity: 0.8;
+        display: none;
+        z-index: 300;
+    }
+    header .maincontents .mainthing .mainbegin4 .picturepricebox a:hover .pictureandpricehover{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandpricehover .txt1{
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+    }
+    header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandpricehover .txt2{
+        padding: 10px;
+        font-size: var(--fontsize-14);
+        color: #a2a4d2;
+        line-height: 150%;
+    }
+    header .maincontents .mainthing .mainbegin4 .picturepricebox .pictureandpricehover .imoticons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: white;
+        font-size: var(--fontsize-18);
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+    header .maincontents .mainthing .mainbegin2 .picturepricebox a{
+        min-width: 294px;
+        margin-right: 6px;
+    }
+
+    header .maincontents .mainthing .mainbegin3 .picturepricebox a{
+        min-width: 383px;
+        margin-right: 16px;
+    }
+    header .maincontents .mainthing .mainbegin4 .picturepricebox a{
+        min-width: 235px;
+        margin-right: 6px;
+    }
+    header .maincontents .newandhowmany{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header .newandhowmanybox{
+        padding: 0 16px;
+    }
+    header .newandhowmany{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .newandhowmany .howmanymain{
+    max-width: 400px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    }
+    header .newandhowmany .howmanymain .howmanycon{
+        font-size: 40px;
+    }
+
+    header .newandhowmany .newmain{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+    header .newandhowmany .newmain .newmainbox{
+        max-width: 600px;
+    }
+
+    header .newandhowmany .newmain .newmainbox .imoandcon{
+        font-size: 18px;
+    }
+    header .businessbox{
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+    header .businessbox .business .businesstxt{
+        font-size: var(--fontsize-20);
+    }
+
+    header .entbox .ent .enttxt{
+        font-size: 20px;
+        width: 500px;
+    }
+
+    header .entbox .ent .entlogo .logos{
+        height: 30px;   
+        margin-right: 15px;
+    }
+    header .entbox{
+        margin-bottom: 30px;
+    }
+    header .service{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header .service .servicebox .serviceattend .serviceattendbox{
+        min-width: 350px;
+    }
+    header footer .addinfo{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    header footer .addinfo .addinfos .addinfobox{
+        border-bottom: none;
+    }
+    header footer .addinfo .addinfos .addinfobox i{
+        display: none;
+    }
+    header footer .addinfo .addinfos .addinfobox4,.addinfobox5{
+        display: block;
+    }
+    header footer .addinfo .addinfos .addinfobox .addinfomain{
+        display: flex;
+    }
+    header footer .addinfo .addinfos{
+        display: flex;
+        justify-content: space-between;
+    }
+    header footer .addinfo .addinfos .addinfobox1{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; 
+    }
+    header footer .addinfo .addinfos .addinfobox2{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; 
+    }
+    header footer .addinfo .addinfos .addinfobox3{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; 
+    }
+    header footer .addinfo .addinfos .addinfobox4{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; 
+    }
+    header footer .addinfo .addinfos .addinfobox5{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; 
+    }
+    header footer .termsandinfo .etcinfo .etcinfotxt{
+        display: block;
+    }
+
+    
+    header footer  .etcsns{
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+    }
+    header footer  .etcsns a{
+        padding: 10px;
+        font-size: 20px;
+        color: var(--footer-backgroundcolor);
+        background-color: var(--footer-color);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+    }
+    header footer .termsandinfo .etcinfo .etcinfobut{
+        display: none;
+    }
+    
+    header footer .termsandinfo .etcinfo .etcinfotxt{
+        display: block;
+    }
+    header footer .termsandinfo .etcinfo .etcinfotxtmain{
+        display: block;
+    }
+    header footer .terminfosns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    header footer .terminfosns .termsandinfo{
+        text-align: start;
+    }
+    header footer .terminfosns .termsandinfo .terms{
+        margin-bottom: 8px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header footer .terminfosns .termsandinfo .terms .termslogo,.privacy{
+        border-right: 1px solid var(--font-darkgray);
+        padding-right: 10px;
+    }
+    header footer .terminfosns .termsandinfo .terms .termslogo img{
+        width: 80px;
+    }
+    header footer .termsandinfo .rights{
+        padding: 0;
+    }
+    header footer .termsandinfo .etcinfo{
+        margin-bottom: 8px;
+    }
+    header footer{
+        padding-bottom: 30px;
+    }
+    .mobilebut{
+        display: none;
+    }
+
+header footer .terminfosns .termsandinfo .terms .termslogo{
+    display: flex;
+}
+     .addinfos{
+        border-bottom: 0.5px solid var(--font-darkgray);
+     }
+
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prog.css">
+    <script src="prog.js" defer></script>
+    <script src="https://kit.fontawesome.com/c60066da6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--헤더부분-->
+    <header>
+        <section class="intro1">
+            <div class="intro1_logo"><!--마우스 올렸을때 글자가 하얘지게-->
+                <a href="https://programmers.co.kr"><img class="logoimg" width="25px" src="https://programmers.co.kr/assets/bi-symbol-light-49a242793b7a8b540cfc3489b918e3bb2a6724f1641572c14c575265d7aeea38.png" alt=""></a>
+                <a class="logotxt" href="https://programmers.co.kr">programmers</a>
+            </div>
+            <ul class="intro1_centxt">
+                <li><a href="https://programmers.co.kr/top_programmers/introduce">탑프로그래머스</a></li>
+                <li><a href="https://programmers.co.kr/skill_check_assignments">스킬업</a></li>
+                <li><a href="https://programmers.co.kr/job">개발자 채용</a></li>
+                <li><a href="https://programmers.co.kr/posts">테크 피드</a></li>
+                <li><a class="centextprc" href="https://programmers.co.kr/learn/challenges">코딩테스트 연습</a></li>
+                <li><a class="centxtlecture" href="https://programmers.co.kr/learn">프로그래밍 강의</a></li>
+            </ul>
+            <ul class="intro1_righttxt">
+                <li><a href="https://programmers.co.kr/users/signup">계정 만들기</a></li>
+                <li><a href="https://programmers.co.kr/users/signup">로그인</a></li>
+                <li><a href="https://business.programmers.co.kr/">기업 회원</a></li>
+            </ul>
+            <div class="intro1_menu">
+                <a href="#" class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </section>
+        <section class="intro2"><!--마우스 올렸을때 글자가 파래지게-->
+                <ul class="intro2list">
+                    <li><a class="recommend" href="https://programmers.co.kr/learn?tag=%EC%B6%94%EC%B2%9C%ED%95%B4%EC%9A%94">추천해요</a></li>
+                    <li><a href="https://programmers.co.kr/learn?tag=%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0%20%EC%8A%A4%ED%84%B0%EB%94%94">코드리뷰 스터디</a></li>
+                    <li><a href="https://programmers.co.kr/learn?tag=%EC%BB%A4%EB%AE%A4%EB%9F%AC%EB%8B%9D">커뮤러닝</a></li>
+                    <li><a href="https://programmers.co.kr/learn?tag=%EB%8D%B0%EB%B8%8C%EC%BD%94%EC%8A%A4">데브코스</a></li>
+                    <li><a href="https://programmers.co.kr/learn?tag=%EC%98%81%EC%83%81/%EC%8B%A4%EC%8A%B5%20%EA%B0%95%EC%9D%98">영상/실습 강의</a></li>
+                    <li><a href="https://programmers.co.kr/learn?tag=%EB%AA%A8%EB%93%A0%20%EC%BD%94%EC%8A%A4">모든 코스</a></li>
+                </ul>
+        </section>
+        <div class="introrespon">
+            <button class="introresponbut">
+                <div class="ddabong">추천해요</div>
+                <div class="hwasal"> <i class="fa-solid fa-caret-down"></i></div>
+            </button>
+            <ul class="introresponlist">
+                <li><a href="https://programmers.co.kr/learn?tag=%EC%B6%94%EC%B2%9C%ED%95%B4%EC%9A%94">추천해요</a></li>
+                <li><a href="https://programmers.co.kr/learn?tag=%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0%20%EC%8A%A4%ED%84%B0%EB%94%94">코드리뷰 스터디</a></li>
+                <li><a href="https://programmers.co.kr/learn?tag=%EC%BB%A4%EB%AE%A4%EB%9F%AC%EB%8B%9D">커뮤러닝</a></li>
+                <li><a href="https://programmers.co.kr/learn?tag=%EB%8D%B0%EB%B8%8C%EC%BD%94%EC%8A%A4">데브코스</a></li>
+                <li><a href="https://programmers.co.kr/learn?tag=%EC%98%81%EC%83%81/%EC%8B%A4%EC%8A%B5%20%EA%B0%95%EC%9D%98">영상/실습 강의</a></li>
+                <li><a href="https://programmers.co.kr/learn?tag=%EB%AA%A8%EB%93%A0%20%EC%BD%94%EC%8A%A4">모든 코스</a></li>
+            </ul>
+        </div>
+
+    <!--maincontent-->
+    <div class="maincontent">
+        <section class="ad">
+            <div class="picture">
+
+            </div>
+            <div class="list"> <!--원 5개를 만들어서 페이지가 넘어갈떄마다 색깔을 변경하는 느낌으로-->
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </section>
+        <ul class="lecture"><!--txt1은 마우스 올렸을떄 글자가 파래짐-->
+
+            <li>
+                <a href="https://programmers.co.kr/learn/courses/13699" class="lecturemain">
+                    <div class="img"><img src="https://grepp-programmers-dev.s3.amazonaws.com/edualpha/file_resource/34/Thumbnail__KDC_Java__3___1_.png" alt=""></div>  
+                    <div class="textbox">
+                        <div class="txt1">[커뮤러닝/4기] 코딩테스트 실력 UP 패키지 : 문제 풀이 꿀팁과 실전 모의고사 with Java</div>
+                        <div class="txt2"><i class="fa-solid fa-square-check"></i>  0강의</div>
+                        <div class="txt3">
+                            <span class="sqarebox">추천해요</span>
+                            <span class="sqarebox">커뮤러닝</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="Sprice">₩300,000</span>
+                        <span class="Bprice">₩30,000</span>
+                    </div>
+                </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/13700" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers-dev.s3.amazonaws.com/edualpha/file_resource/35/Thumbnail__KDC_C%2B%2B__3___1_.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[커뮤러닝/4기] 코딩테스트 실력 UP 패키지 : 문제 풀이 꿀팁과 실전 모의고사 with C++</span>
+                    <span class="txt2"><i class="fa-solid fa-square-check"></i>  0강의</span>
+                    <div class="txt3">
+                        <span class="sqarebox">추천해요</span>
+                        <span class="sqarebox">커뮤러닝</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="Sprice">₩300,000</span>
+                    <span class="Bprice">₩30,000</span>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/13701" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers-dev.s3.amazonaws.com/edualpha/file_resource/36/Thumbnail__KDC_Python__3___1_.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[커뮤러닝/4기] 코딩테스트 실력 UP 패키지 : 문제 풀이 꿀팁과 실전 모의고사 with Python</span>
+                    <span class="txt2"><i class="fa-solid fa-square-check"></i>  0강의</span>
+                    <div class="txt3">
+                        <span class="sqarebox">추천해요</span>
+                        <span class="sqarebox">커뮤러닝</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="Sprice">₩300,000</span>
+                    <span class="Bprice">₩30,000</span>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/13764" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers-dev.s3.amazonaws.com/edualpha/file_resource/44/thumb_course10653__1_.jpg" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">코딩테스트와 실무 역량 모두 잡는 스터디: Python반</span>
+                    <span class="txt2"><i class="fa-solid fa-user"></i> 30명 정원</span>
+                    <div class="txt3">
+                        <span class="sqarebox">추천해요</span>
+                        <span class="sqarebox">커뮤러닝</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="Sprice">₩300,000</span>
+                    <span class="Bprice">₩30,000</span>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/13885" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/1090/thumb_course13311__1___1_.jpg" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[스터디/15기] 프론트엔드 개발을 위한 자바스크립트 (feat. VanillaJS)</span>
+                    <span class="txt2"><i class="fa-solid fa-user"></i> 30명 정원</span>
+                    <div class="txt3">
+                        <span class="sqarebox">추천해요</span>
+                        <span class="sqarebox">코드리뷰스터디</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="Sprice">₩400,000</span>
+                    <span class="Bprice">₩360,000</span>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/13213" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/879/thumbnail_13213.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">코딩테스트 광탈 방지 A to Z : JavaScript</span>
+                    <span class="txt2">
+                        <span class="txt2_1"><i class="fa-solid fa-square-check"></i>74강의</span>
+                        <span class="txt2_2"><i class="fa-solid fa-clock"></i>  약 5시간</span>
+                    </span>
+                    <div class="txt3">
+                        <span class="sqarebox">JavaScript</span>
+                        <span class="sqarebox">영상/실습 강의</span>
+                        <span class="sqarebox">추천해요</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price2">
+                    <div class="starsandrating">
+                    <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <div class="rating">
+                        <span class="number">4.9<i class="fa-solid fa-colon"></i></span>
+                        <span class="howmany">4개의 평가</span>
+                    </div>
+                    </div>
+                    <span class="Bblueprice">₩100,000</span>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/13007" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/735/Thumbnail_Cplusplus.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[C++] 어서와! 자료구조와 알고리즘은 처음이지?</span>
+                    <div class="txt2">
+                        <span class="txt2_1"><i class="fa-solid fa-square-check"></i>57강의</span>
+                        <span class="txt2_2"><i class="fa-solid fa-clock"></i>  약 15시간</span>
+                        </div>
+                    <div class="txt3">
+                        <span class="sqarebox">C++</span>
+                        <span class="sqarebox">영상/실습 강의</span>
+                        <span class="sqarebox">추천해요</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price2">
+                    <span class="Bblueprice">₩70,000</span>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/9899" class="lecturemain">
+                <div class="img"><img src="https://s3.ap-northeast-2.amazonaws.com/grepp-cloudfront/programmers_imgs/learn/course9877_course9899/thumbnail-lecture-9877-c%2B%2B.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[C++/문제풀이] C++을 무기로, 코딩테스트 광탈을 면하자!</span>
+                    <div class="txt2">
+                        <span class="txt2_1"><i class="fa-solid fa-square-check"></i>21강의</span>
+                        <span class="txt2_2"><i class="fa-solid fa-clock"></i>  약 4시간</span>
+                    </div>
+                    <div class="txt3">
+                        <span class="sqarebox">C++</span>
+                        <span class="sqarebox">영상/실습 강의</span>
+                        <span class="sqarebox">추천해요</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="price2">
+                    <div class="starsandrating">
+                    <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="rating">
+                        <span class="number">4.7<i class="fa-solid fa-colon"></i></span>
+                        <span class="howmany">13개의 평가</span>
+                    </div>
+                    </div>
+                    <span class="Bblueprice">₩100,000</span>
+                </div>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/57" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/736/Thumbnail_Python.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">어서와! 자료구조와 알고리즘은 처음이지?</span>
+                    <div class="txt2">
+                        <span class="txt2_1"><i class="fa-solid fa-square-check"></i>52강의</span>
+                        <span class="txt2_2"><i class="fa-solid fa-clock"></i>  약 6시간</span>
+                    </div>
+                    <div class="txt2">알고리즘, 자료구조에 대한 이해가 부족한 모든 개발자/개발자 꿈나무를 위한 프로그래머스 대표 강의.</div>
+                    <div class="txt3">
+                        <span class="sqarebox">Python</span>
+                        <span class="sqarebox">영상/실습 강의</span>
+                        <span class="sqarebox">추천해요</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="price2">
+                    <div class="starsandrating">
+                    <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="rating">
+                        <span class="number">4.9<i class="fa-solid fa-colon"></i></span>
+                        <span class="howmany">47개의 평가</span>
+                    </div>
+                    </div>
+                    <span class="Bblueprice">₩40,000</span>
+                </div>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/10302" class="lecturemain">
+                <div class="img"><img src="https://grepp-cloudfront.s3.ap-northeast-2.amazonaws.com/programmers_imgs/learn/course10302/thumbnail-course-10302.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[Java/문제풀이] 코딩테스트 광탈 방지 Kit: Java편</span>
+                    <div class="txt2">
+                        <span class="txt2_1"><i class="fa-solid fa-square-check"></i>24강의</span>
+                        <span class="txt2_2"><i class="fa-solid fa-clock"></i>  약 2시간</span>
+                    </div>
+                    <div class="txt2">Java 유저를 위한 코딩테스트 특효약! 문제풀며 코테 대비 + Java 역량 강화 + OOP 이해를 함께해요.</div>
+                    <div class="txt3">
+                        <span class="sqarebox">Java</span>
+                        <span class="sqarebox">영상/실습 강의</span>
+                        <span class="sqarebox">추천해요</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="price2">
+                    <div class="starsandrating">
+                    <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div class="rating">
+                        <span class="number">4.7<i class="fa-solid fa-colon"></i></span>
+                        <span class="howmany">6개의 평가</span>
+                    </div>
+                    </div>
+                    <span class="Bblueprice">₩100,000</span>
+                </div>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/13577" class="lecturemain">
+                <div class="img"><img src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/729/Thumbnail_Java__1_.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[Java] 어서와! 자료구조 알고리즘은 처음이지?</span>
+                    <div class="txt2">
+                        <span class="txt2_1"><i class="fa-solid fa-square-check"></i>82강의</span>
+                        <span class="txt2_2"><i class="fa-solid fa-clock"></i>  약 8시간</span>
+                        </div>
+                    <div class="txt3">
+                        <span class="sqarebox">영상/실습 강의</span>
+                        <span class="sqarebox">추천해요</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="price2">
+                    <span class="Bblueprice">₩70,000</span>
+                </div>
+                </div>
+            </a>
+            </li>
+            <li><a href="https://programmers.co.kr/learn/courses/9877" class="lecturemain">
+                <div class="img"><img src="https://s3.ap-northeast-2.amazonaws.com/grepp-cloudfront/programmers_imgs/learn/course9877_course9899/thumbnail-lecture-9877-python.png" alt=""></div>
+                <div class="textbox">
+                    <span class="txt1">[Python/문제풀이] 파이썬을 무기로, 코딩테스트 광탈을 면하자!</span>
+                    <div class="txt2">
+                        <span class="txt2_1"><i class="fa-solid fa-square-check"></i>21강의</span>
+                        <span class="txt2_2"><i class="fa-solid fa-clock"></i>  약 3시간</span>
+                        </div>
+                    <div class="txt3">
+                        <span class="sqarebox">Python</span>
+                        <span class="sqarebox">영상/실습 강의</span>
+                        <span class="sqarebox">추천해요</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="price2">
+                    <div class="starsandrating">
+                        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <div class="rating">
+                            <span class="number">4.7<i class="fa-solid fa-colon"></i></span>
+                            <span class="howmany">17개의 평가</span>
+                        </div>
+                    </div>
+                    <span class="Bblueprice">₩100,000</span>
+                </div>
+                </div>
+            </li>
+            </a>
+        </ul>
+    </div>
+    <!--footer시작-->
+    <footer>
+        <div class="etc">
+            <div class="etcinfos">
+                <div class="etcinfo"> <!--underis부분에 마우스 올렸을때 파랑색으로 바뀌게, 고객센터는 마우스 올렸을때 드래그 가능하게-->
+                    <div class="whatis">서비스</div>
+                    <div class="underis">
+                        <a href="https://programmers.co.kr/">개발자용 프로그래머스</a>
+                        <a href="https://business.programmers.co.kr/">기업용 프로그래머스</a>
+                        <a href="https://school.programmers.co.kr/">프로그래머스 스쿨</a>
+                    </div>
+                </div>
+                <div class="etcinfo">
+                    <span class="whatis">문의</span>
+                    <div class="underis">
+                        <a target="_blank" href="https://programmers.co.kr/">FAQ/문의   <i class="fa-solid fa-check"></i></a>
+                        <a target="_blank" href="https://business.programmers.co.kr/">교육 결제, 환불 관련 문의   <i class="fa-solid fa-check"></i></a>
+                    </div>
+                </div>
+                <div class="etcinfo"> 
+                    <span class="whatis">고객센터</span>
+                    <div class="underis">
+                        <span class="repnum">대표 번호: 1533-1886</span>
+                        <span class="etcsmall">운영시간 : 오전 9시 ~ 오후 6시 (주말 및 공휴일 휴무)</span>
+                        <span class="etcsmall">점심시간 : 오후 12시 ~ 오후 1시</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="othersite">
+                <button class="button" >패밀리사이트   <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropbox" id="drop-content">
+                    <a target="_blank" href="https://www.grepp.co/">그렙</a>
+                    <a target="_blank" href="https://monito.io/">모니토</a>
+                    <a target="_blank" href="https://hashcode.co.kr/">해시코드</a>
+                </div>
+            </div> 
+        </div>
+        <div class="company">
+            <a href="https://programmers.co.kr" class="comtitle">2022 프로그래머스</a>
+            <div class="cominfo">(주)그렙 / 공동대표 이확영, 임성수 / 서울특별시 서초구 강남대로 327, 2층 프로그래머스(서초동, 대륭서초타워) / 사업자등록번호 220-88-75699 / 통신판매업신고 제 2014-서울강남-03241호 / 직업정보제공사업 신고번호 J1200020180027 / 유료직업소개사업 등록번호 (국내)제2021-3210195-14-5-00026호 (국외)서울청 유 제2021-7호</div>
+        </div>
+        <div class="snsandterms">
+            <div class="terms"><!--마우스 올렸을때 파란색으로-->
+                <a href="https://programmers.co.kr/privacy" class="strongterms">개인정보 처리방침</a>
+                <a href="https://programmers.co.kr/tos">이용약관</a>
+                <a target="_blank" href="https://www.notion.so/prgrms/grepp-772559b20f9f451c94b568468eb53f47">프로그래머스 인재 채용</a>
+            </div>
+            <div class="sns"> <!--마우스 올렸을때 각자의 로고에 맞는 색으로 변하게-->
+                <a class="facebook" target="_blank" href="https://www.facebook.com/programmersgrepp/about"><i class="fa-brands fa-facebook"></i></a>
+                <a class="youtube" target="_blank" href="https://www.youtube.com/c/Programmerschannel"><i class="fa-brands fa-youtube"></i></a>
+                <a class="instagram" target="_blank" href="https://www.instagram.com/mu_sseuk/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    </header>
+</body>
+</html>

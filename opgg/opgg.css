@@ -1,0 +1,479 @@
+:root{
+    /*colors*/
+    --main-background:#5283e9;
+    --othergames-background:RGB(33, 47, 69);
+    --othergames-hover:#2F436E;
+    --newanddown-color:#ffb902;
+    --design-color:#9aa5ae;
+    --twitter-color:#53acee;
+    --facebook-color:#384f84;
+    --instagram-color:RGB(221, 50, 124);
+    --darkmode-color:#b2ccff;
+    --contentfont-color:#b0caff;
+    --gamemodefont-color:RGB(0, 254, 224);
+    --gray-color:#9aa4af;
+    --desktopdown-background:#202d36;
+    --hover-color:#f7f7f9;
+    
+    /*font-size*/
+    --fontsize-mainlogo:32px;
+    --fontsize-logo:16px;
+    --fontsize-name:12px;
+    --fontsize-contents:15px;
+    --fontsize-ads:14px;
+    --fontsize-ranking:18px;
+
+}
+body{
+    background-color: var(--main-background);
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header .headbox .headboxmain{
+    display: flex;
+    padding-left: 12px;
+}
+header .headbox .logoandnow{
+    background-color: var(--main-background);
+    display: flex;
+    min-width: 1206.55px;
+}
+header .headbox .logoandnow a{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    margin-right: 20px;
+}
+header .headbox .logoandnow .logos{
+    width: 70px;
+}
+header .headbox .logoandnow .logos img{
+    width: 100%;
+}
+header .headbox .logoandnow .nowgame{
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    color: white;
+}
+header .headbox .logoandnow .nowgame .logo{
+    width: 24px;
+    margin-right: 10px;
+}
+header .headbox .logoandnow .nowgame .logo img{
+    width: 100%;
+}
+header .headbox .logoandnow .nowgame .name{
+    font-size: var(--fontsize-name);
+}
+header .headbox .headboxmain .othergames{
+    display: flex;
+    background-color: var(--othergames-background);
+}
+header .headbox .headboxmain .othergames a:hover{
+    background-color: var(--othergames-hover);
+    border-radius: 4px;
+}
+header .headbox .headboxmain .othergames .gamebox{
+    padding: 5px;
+}
+header .headbox .headboxmain .othergames .game{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0;
+    height: 100%;
+}
+header .headbox .headboxmain .othergames .game .name{
+    font-size: var(--fontsize-name);
+    width: fit-content;
+}
+header .headbox .headboxmain .othergames .game .addinfo{
+    background-color: var(--newanddown-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: var(--othergames-background);
+    margin-right: 8px;
+}
+header .headbox .headboxmain .othergames .logo{
+    width: 25px;
+    margin-right: 10px;
+    height: fit-content;
+}
+header .headbox .headboxmain .othergames .logo img{
+    width: 100%;
+}
+header .headbox .headboxmain .othergames .logo i{
+    font-size: var(--fontsize-logo);
+    color: white;
+}
+header .headbox .headboxmain .loginandoption{
+    display: flex;
+    min-width: 221.445px;
+    justify-content: flex-end;
+    padding-right: 12px;
+    background-color: var(--othergames-background);
+    flex-grow: 1;
+    font-size: 12px;
+    color: white;
+    align-items: center;
+
+    padding: 12px 0;
+}
+header .headbox .headboxmain .loginandoption button{
+    border: none;
+    color: var(--darkmode-color);
+    background-color: var(--othergames-background);
+    height: fit-content;
+    margin-right: 12px;
+}
+header .headbox .headboxmain .loginandoption .language{
+    display: flex;
+    color: white;
+    width: 50px;
+}
+header .headbox .headboxmain .loginandoption .language i{
+    margin-left: 10px;
+}
+header .headbox .headboxmain .loginandoption a{
+    padding: 4px 16px;
+    color: white;
+    background-color: var(--main-background);
+    border-radius: 4px;
+    margin: 0 16px;
+}
+header .contentsbox{
+    display: flex;
+    justify-content: center;
+}
+header .contentsbox .contents{
+    min-width: 1080px;
+    height: 48px;
+    font-size: var(--fontsize-contents);
+    display: flex;
+}
+header .contentsbox .contents .home{
+    color: white;
+    border-bottom: white solid 3px;
+}
+header .contentsbox .contents a{
+    color: var(--contentfont-color);
+    margin-right: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+header .contentsbox .contents a:hover{
+    color: white;
+    border-bottom: white solid 3px;
+}
+header .contentsbox .contents .gamemode{
+    color: var(--gamemodefont-color);
+}
+header .downloadbox{
+    background-color: var(--newanddown-color);
+    display: flex;
+    justify-content: center;
+    
+}
+header .downloadbox .download{
+    min-width: 1080px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+}
+header .downloadbox .download a{
+
+    height: 100%;
+}
+header .designbox{
+    background-color: var(--design-color);
+    display: flex;
+    justify-content: center;
+}
+header .designbox .design{
+    min-width: 1080px;
+    height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+header .designbox .design span{
+    text-decoration: underline;
+}
+header .downloadbox:hover{
+    text-decoration: underline;
+}
+header .designbox:hover{
+    text-decoration: underline;
+}
+header .main{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+header .main .logopic{
+    width: 400px;
+}
+header .main .logopic img{
+    width: 100%;
+}
+header .searchboxmom{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+header .searchboxmom .searchbox{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+}
+header .searchboxmom .searchbox .languageandsearch{
+    display: flex;
+}
+header .searchboxmom .searchbox .languageandsearch .language{
+    display: flex;
+    flex-direction: column;
+    width: 194px;
+    border: none;
+    background-color: white;
+    margin: 10px 0 10px 30px;
+    height: 40px;
+    justify-content: space-between;
+    border-right: 0.5px solid var(--gray-color);
+    padding-right: 10px;
+    cursor: pointer;
+}
+header .searchboxmom .searchbox .languageandsearch  .graytxt{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--gray-color);
+    font-size: 14px;
+}
+header .searchboxmom .searchbox .languageandsearch  .blacktxt{
+    font-size: 12px;
+    font-weight: bold;
+}
+header .searchboxmom .searchbox .languageandsearch .search{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    border: none;
+    background-color: white;
+    margin: 10px 0 10px 8px;
+    height: 40px;
+    justify-content: space-between;
+}
+header .searchboxmom .searchbox .languageandsearch .search input{
+    border: none;
+}
+header .searchboxmom .searchbox button{
+    width: 78px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+header .searchboxmom .searchbox .buttonimg{
+    width: 42px;
+}
+header .searchboxmom .searchbox .buttonimg img{
+    width: 100%;
+}
+header .desktopdownmom{
+    display: flex;
+    justify-content: center;
+}
+header .desktopdownmom .desktopdown{
+    background-color: var(--desktopdown-background);
+    color: white;
+    font-size: 12px;
+    padding: 0 16px;
+    margin: 24px 0;
+    border-radius: 4px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+header .desktopdownmom .desktopdown i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+header .communitiytopmom{
+    display: flex;
+    justify-content: center;
+}
+header .communitiytopmom .communitytop{
+    min-width: 1080px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header .communitiytopmom .communitytop .img{
+    width: 100px;
+    height: 50px;
+}
+header .communitiytopmom .communitytop .img img{
+    width: 100%;
+    height: 100%;
+}
+header .communitiytopmom .communitytop .txt{
+    font-size: 14px;
+    padding: 17px 0 17px 20px;
+    font-weight: bold;
+    color: black;
+}
+header .communitiytopmom .communitytop .maintopbox{
+    display: flex;
+    width: 516px;
+    height: 80px;
+    margin: 0 12px;
+}
+header .communitiytopmom .communitytop .content{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    flex-wrap: wrap;
+}
+header .communitiytopmom .communitytop .maintopbox .maintop{
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+}
+header .communitiytopmom .communitytop .maintopbox .maintop .rank{
+    font-size: 18px;
+    color: black;
+    padding: 0 20px;
+}
+header .communitiytopmom .communitytop .maintopbox .maintop .txtbox{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+header .communitiytopmom .communitytop .maintopbox .maintop .txtbox .uptxt{
+    font-size: 14px;
+    display: flex;
+    color: black;
+}
+header .communitiytopmom .communitytop .maintopbox .maintop .txtbox .uptxt .howmanycomment{
+    padding-left: 5px;
+    color: #5383E8;
+}
+header .communitiytopmom .communitytop .maintopbox .maintop .txtbox .downtxt{
+    font-size: 12px;
+    display: flex;
+    color:var(--gray-color);
+}
+header .communitiytopmom .communitytop .maintopbox .maintop .txtbox .downtxt .when{
+    padding-right: 10px;
+}
+header .communitiytopmom .communitytop .maintopbox:hover{
+    background-color: var(--hover-color);
+}
+header .communitiytopmom .communitytop .maintopbox:hover .uptxt .title{
+    text-decoration: underline;
+    color: #5383E8;
+}
+header .othercontentmom{
+    display: flex;
+    justify-content: center;
+}
+header .othercontentmom .othercontent{
+    min-width: 1080px;
+    margin-top: 100px;
+    display: flex;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+header .othercontentmom .othercontent .logo{
+    width: 99px;
+}
+header .othercontentmom .othercontent .logo img{
+    width: 100%;
+}
+header .othercontentmom .othercontent .othercontents{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    font-size: 14px;
+    color: white;
+}
+header .othercontentmom .othercontent .othercontents .title{
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+header .othercontentmom .othercontent .othercontents .mains{
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+}
+header .othercontentmom .othercontent .othercontents .mains .maintxtstrong{
+    font-weight: bold;
+}
+header .othercontentmom .othercontent .othercontents .mains a{
+    font-size: 14px;
+    color: white;
+}
+header .othercontentmom .othercontent .othercontents .mains a:hover{
+    text-decoration: underline;
+}
+header .footerboxmom{
+    display: flex;
+    justify-content: center;
+}
+header .footerboxmom .footerbox{
+    min-width: 1080px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+header .footerboxmom .footerbox .footertxt{
+    font-size: 12px;
+    color: white;
+    width: 980px;
+}
+header .footerboxmom .footerbox .sns{
+    display: flex;
+    font-size: 24px;
+}
+header .footerboxmom .footerbox .sns a{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+header .footerboxmom .footerbox .sns a img{
+    width: 100%;
+}
+header .inquiry{
+    position: fixed;
+    background-color: var(--othergames-background);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    right: 50px;
+    bottom: 50px;
+    border: none;
+}
+header .inquiry i{
+    color: white;
+    transform: scaleX(-1);
+    font-size: 20px;
+}
+header .inquiry:hover{
+    background-color: #141d22;
+    cursor: pointer;
+}
